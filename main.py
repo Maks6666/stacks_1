@@ -1,16 +1,14 @@
-# This is a sample Python script.
+# 1
+pages = []
 
-# Press ⌃R to execute it or replace it with your code.
-# Press Double ⇧ to search everywhere for classes, files, tool windows, actions, and settings.
+pages.append("First one")
+pages.append("Second one")
+pages.append("Third one")
+
+def return_to_prev():
+    pages.pop()
 
 
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press ⌘F8 to toggle the breakpoint.
+pages.pop()
+print(f"Current page is: {pages[-1]}")
 
-
-# Press the green button in the gutter to run the script.
-if __name__ == '__main__':
-    print_hi('PyCharm')
-
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
